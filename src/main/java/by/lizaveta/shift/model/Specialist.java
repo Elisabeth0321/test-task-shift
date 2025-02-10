@@ -12,4 +12,5 @@ public abstract class Specialist {
     protected String name;
 
     protected double salary;
+
 }

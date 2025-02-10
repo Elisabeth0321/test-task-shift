@@ -3,6 +3,7 @@ package by.lizaveta.shift.service;
 import java.util.regex.Pattern;
 
 public class DataValidator {
+
     private static final Pattern SALARY_PATTERN = Pattern.compile("^\\d+(\\.\\d+)?$");
 
     public static boolean isValidSalary(String salaryStr) {
@@ -17,4 +18,5 @@ public class DataValidator {
             return false;
         }
     }
+
 }

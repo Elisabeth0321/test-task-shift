@@ -8,32 +8,31 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.List;
+import java.util.Locale;
 import java.util.Map;
-import java.util.stream.Collectors;
 
 public class OutputHandler {
+
     public static void printOrSaveData(Map<String, Department> departments, List<String> invalidData, String output, String filePath) throws IOException {
         StringBuilder outputText = new StringBuilder();
 
         for (Department department : departments.values()) {
             outputText.append(department.getName()).append("\n");
+
             Manager manager = department.getManager();
             if (manager != null) {
-                outputText.append(String.format("Manager,%d,%s,%.2f\n", manager.getId(), manager.getName(), manager.getSalary()));
+                outputText.append(String.format(Locale.US, "Manager,%d, %s, %.2f\n", manager.getId(), manager.getName(), manager.getSalary()));
             }
 
             List<Employee> employees = department.getEmployees();
             for (Employee employee : employees) {
-                outputText.append(String.format("Employee,%d,%s,%.2f\n", employee.getId(), employee.getName(), employee.getSalary()));
+                outputText.append(String.format(Locale.US, "Employee,%d, %s, %.2f\n", employee.getId(), employee.getName(), employee.getSalary()));
             }
 
-            double avgSalary = employees.stream()
-                    .collect(Collectors.averagingDouble(Employee::getSalary));
-
-            outputText.append(String.format("%d,%.2f\n", employees.size(), avgSalary));
+            outputText.append(StatisticsCalculator.calculateStatistics(department)).append("\n");
         }
 
-        outputText.append("\nНекорректные данные:\n");
+        outputText.append("\nInvalid data:\n");
         for (String line : invalidData) {
             outputText.append(line).append("\n");
         }
@@ -46,4 +45,5 @@ public class OutputHandler {
             throw new IllegalArgumentException("Invalid output type: " + output);
         }
     }
+
 }

@@ -4,7 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0fea6db-64aa-4ba7-a154-e0ad90acfda4" name="Changes" comment="" />
+    <list default="true" id="b0fea6db-64aa-4ba7-a154-e0ad90acfda4" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/lizaveta/shift/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/lizaveta/shift/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/lizaveta/shift/model/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/lizaveta/shift/model/Department.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/lizaveta/shift/model/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/lizaveta/shift/model/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/lizaveta/shift/model/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/lizaveta/shift/model/Manager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/lizaveta/shift/model/Specialist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/lizaveta/shift/model/Specialist.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/lizaveta/shift/service/ArgumentParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/lizaveta/shift/service/ArgumentParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/lizaveta/shift/service/DataValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/lizaveta/shift/service/DataValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/lizaveta/shift/service/EmployeeSorter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/lizaveta/shift/service/EmployeeSorter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/lizaveta/shift/service/FileProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/lizaveta/shift/service/FileProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/lizaveta/shift/service/OutputHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/lizaveta/shift/service/OutputHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/lizaveta/shift/service/StatisticsCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/lizaveta/shift/service/StatisticsCalculator.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +28,23 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="test-task-shift" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -57,8 +88,9 @@
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/WORK/test-task-shift",
+    "last_opened_file_path": "D:/WORK/pupupu",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -113,7 +145,9 @@
       <workItem from="1739201329917" duration="85000" />
       <workItem from="1739201448463" duration="12000" />
       <workItem from="1739201466355" duration="19000" />
-      <workItem from="1739201488964" duration="534000" />
+      <workItem from="1739201488964" duration="6091000" />
+      <workItem from="1739215725248" duration="370000" />
+      <workItem from="1739216354109" duration="6737000" />
     </task>
     <servers />
   </component>

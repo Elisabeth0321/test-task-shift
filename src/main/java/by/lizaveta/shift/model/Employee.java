@@ -17,4 +17,5 @@ public class Employee extends Specialist {
         super(id, name, salary);
         this.managerId = managerId;
     }
+
 }

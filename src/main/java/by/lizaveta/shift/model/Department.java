@@ -22,7 +22,4 @@ public class Department {
         this.name = name;
     }
 
-    public void addEmployee(Employee employee) {
-        employees.add(employee);
-    }
 }

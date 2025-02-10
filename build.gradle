@@ -7,7 +7,7 @@ group = 'by.lizaveta'
 version = '1.0'
 
 application {
-    mainClass = 'com.company.Main'
+    mainClass = 'by.lizaveta.shift.Main'
 }
 
 java {

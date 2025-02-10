@@ -17,4 +17,5 @@ public class Manager extends Specialist {
         super(id, name, salary);
         this.department = department;
     }
+
 }

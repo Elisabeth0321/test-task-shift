@@ -1,12 +1,14 @@
 package by.lizaveta.shift.service;
 
+import by.lizaveta.shift.model.Department;
 import by.lizaveta.shift.model.Employee;
 
 import java.util.Comparator;
-import java.util.List;
+import java.util.Map;
 
 public class EmployeeSorter {
-    public static void sortEmployees(List<Employee> employees, String criteria, String order) {
+
+    public static void sortEmployees(Map<String, Department> departments, String criteria, String order) {
         Comparator<Employee> comparator;
 
         if ("name".equalsIgnoreCase(criteria)) {
@@ -21,7 +23,9 @@ public class EmployeeSorter {
             comparator = comparator.reversed();
         }
 
-        employees.sort(comparator);
+        for (Department department : departments.values()) {
+            department.getEmployees().sort(comparator);
+        }
     }
-}
 
+}
