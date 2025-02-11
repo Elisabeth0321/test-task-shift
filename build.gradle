@@ -10,6 +10,12 @@ application {
     mainClass = 'by.lizaveta.shift.Main'
 }
 
+jar {
+    manifest {
+        attributes 'Main-Class': 'by.lizaveta.shift.Main'
+    }
+}
+
 java {
     toolchain {
         languageVersion = JavaLanguageVersion.of(17)

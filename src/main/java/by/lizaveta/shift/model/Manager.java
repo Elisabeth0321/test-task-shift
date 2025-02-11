@@ -9,7 +9,7 @@ import lombok.ToString;
 @Setter
 @ToString(callSuper = true)
 @EqualsAndHashCode(callSuper = true)
-public class Manager extends Specialist {
+public class Manager extends Person {
 
     private String department;
 

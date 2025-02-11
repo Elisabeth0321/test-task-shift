@@ -1,6 +1,7 @@
 package by.lizaveta.shift.service;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class ArgumentParser {
@@ -12,29 +13,40 @@ public class ArgumentParser {
             String arg = args[i].trim();
 
             if (arg.startsWith("--")) {
-                String[] parts = arg.substring(2).split("=", 2);
-                if (parts.length == 2) {
-                    options.put(parts[0], parts[1]);
-                } else {
-                    throw new IllegalArgumentException("Invalid argument: " + arg);
-                }
+                addLongOption(options, arg);
             } else if (arg.startsWith("-")) {
-                if (arg.equals("-s") || arg.equals("-o") || arg.equals("-p")) {
-                    if (i + 1 < args.length) {
-                        options.put(getFullOptionName(arg), args[i + 1]);
-                        i++;
-                    } else {
-                        throw new IllegalArgumentException("Flag " + arg + " requires a value.");
-                    }
-                } else {
-                    throw new IllegalArgumentException("Unknown flag: " + arg);
-                }
+                i = addShortOption(options, args, i);
             }
         }
 
         validateOptions(options);
-
         return options;
+    }
+
+    private static void addLongOption(Map<String, String> options, String arg) {
+        String[] parts = arg.substring(2).split("=", 2);
+        if (parts.length == 2) {
+            options.put(parts[0], parts[1]);
+        } else {
+            throw new IllegalArgumentException("Invalid argument: " + arg);
+        }
+    }
+
+    private static int addShortOption(Map<String, String> options, String[] args, int i) {
+        String[] parts = args[i].split("=", 2);
+        String flag = parts[0];
+
+        if (!List.of("-s", "-o", "-p").contains(flag)) {
+            throw new IllegalArgumentException("Unknown flag: " + flag);
+        }
+
+        String value = (parts.length == 2) ? parts[1] : (i + 1 < args.length ? args[++i] : null);
+        if (value == null) {
+            throw new IllegalArgumentException("Flag " + flag + " requires a value.");
+        }
+
+        options.put(getFullOptionName(flag), value);
+        return i;
     }
 
     private static String getFullOptionName(String shortFlag) {

@@ -5,7 +5,7 @@ import lombok.Data;
 
 @Data
 @AllArgsConstructor
-public abstract class Specialist {
+public abstract class Person {
 
     protected int id;
 

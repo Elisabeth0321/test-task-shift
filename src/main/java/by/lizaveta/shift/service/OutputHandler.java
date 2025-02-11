@@ -21,18 +21,18 @@ public class OutputHandler {
 
             Manager manager = department.getManager();
             if (manager != null) {
-                outputText.append(String.format(Locale.US, "Manager,%d, %s, %.2f\n", manager.getId(), manager.getName(), manager.getSalary()));
+                outputText.append(String.format(Locale.US, "Manager,%d,%s,%.2f\n", manager.getId(), manager.getName(), manager.getSalary()));
             }
 
             List<Employee> employees = department.getEmployees();
             for (Employee employee : employees) {
-                outputText.append(String.format(Locale.US, "Employee,%d, %s, %.2f\n", employee.getId(), employee.getName(), employee.getSalary()));
+                outputText.append(String.format(Locale.US, "Employee,%d,%s,%.2f\n", employee.getId(), employee.getName(), employee.getSalary()));
             }
 
             outputText.append(StatisticsCalculator.calculateStatistics(department)).append("\n");
         }
 
-        outputText.append("\nInvalid data:\n");
+        outputText.append("Invalid data:\n");
         for (String line : invalidData) {
             outputText.append(line).append("\n");
         }
