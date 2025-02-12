@@ -1,6 +1,7 @@
 .gradle
 build/
 !gradle/wrapper/gradle-wrapper.jar
+!build/libs/test-task-shift-1.0.jar
 !**/src/main/**/build/
 !**/src/test/**/build/
 
