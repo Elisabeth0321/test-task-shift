@@ -4,10 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b0fea6db-64aa-4ba7-a154-e0ad90acfda4" name="Changes" comment="rename Specialist class to person">
+    <list default="true" id="b0fea6db-64aa-4ba7-a154-e0ad90acfda4" name="Changes" comment="change project structure">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/lizaveta/shift/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/lizaveta/shift/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/lizaveta/shift/service/ArgumentParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/lizaveta/shift/service/parser/ArgumentParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/lizaveta/shift/service/DataValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/lizaveta/shift/service/validation/DataValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/lizaveta/shift/service/EmployeeSorter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/lizaveta/shift/service/processing/EmployeeSorter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/lizaveta/shift/service/FileProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/lizaveta/shift/service/parser/FileProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/lizaveta/shift/service/OutputHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/lizaveta/shift/service/output/OutputHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/lizaveta/shift/service/StatisticsCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/lizaveta/shift/service/processing/StatisticsCalculator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +85,7 @@
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/WORK/pupupu&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Загрузки/test-task-shift-main&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -143,7 +148,8 @@
       <workItem from="1739251703868" duration="16740000" />
       <workItem from="1739347706227" duration="129000" />
       <workItem from="1739347856464" duration="418000" />
-      <workItem from="1739348359218" duration="650000" />
+      <workItem from="1739348359218" duration="944000" />
+      <workItem from="1739370332747" duration="342000" />
     </task>
     <task id="LOCAL-00001" summary="fix StatisticsCalculator, OutputHandler, FileProcessor">
       <option name="closed" value="true" />
@@ -161,7 +167,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739296520264</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add test-task-shift-1.0.jar file&#10;update README">
+      <option name="closed" value="true" />
+      <created>1739349249172</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1739349249172</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,7 +188,9 @@
     </ignored-roots>
     <MESSAGE value="fix StatisticsCalculator, OutputHandler, FileProcessor" />
     <MESSAGE value="rename Specialist class to person" />
-    <option name="LAST_COMMIT_MESSAGE" value="rename Specialist class to person" />
+    <MESSAGE value="add test-task-shift-1.0.jar file&#10;update README" />
+    <MESSAGE value="change project structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="change project structure" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

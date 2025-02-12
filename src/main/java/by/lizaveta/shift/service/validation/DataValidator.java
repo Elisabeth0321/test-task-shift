@@ -1,4 +1,4 @@
-package by.lizaveta.shift.service;
+package by.lizaveta.shift.service.validation;
 
 import java.util.regex.Pattern;
 
@@ -10,12 +10,12 @@ public class DataValidator {
         return salaryStr != null && SALARY_PATTERN.matcher(salaryStr).matches() && Double.parseDouble(salaryStr) > 0;
     }
 
-    public static boolean isValidId(String idStr) {
+    public static boolean isNotValidId(String idStr) {
         try {
             int id = Integer.parseInt(idStr);
-            return id > 0;
+            return id <= 0;
         } catch (NumberFormatException e) {
-            return false;
+            return true;
         }
     }
 

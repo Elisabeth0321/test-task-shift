@@ -1,6 +1,9 @@
 package by.lizaveta.shift;
 
-import by.lizaveta.shift.service.*;
+import by.lizaveta.shift.service.output.OutputHandler;
+import by.lizaveta.shift.service.parser.ArgumentParser;
+import by.lizaveta.shift.service.parser.FileProcessor;
+import by.lizaveta.shift.service.processing.EmployeeSorter;
 
 import java.io.IOException;
 import java.util.List;

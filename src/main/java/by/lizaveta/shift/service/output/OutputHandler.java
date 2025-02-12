@@ -1,8 +1,9 @@
-package by.lizaveta.shift.service;
+package by.lizaveta.shift.service.output;
 
 import by.lizaveta.shift.model.Department;
 import by.lizaveta.shift.model.Employee;
 import by.lizaveta.shift.model.Manager;
+import by.lizaveta.shift.service.processing.StatisticsCalculator;
 
 import java.io.IOException;
 import java.nio.file.Files;

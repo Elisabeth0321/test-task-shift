@@ -1,4 +1,4 @@
-package by.lizaveta.shift.service;
+package by.lizaveta.shift.service.parser;
 
 import java.util.HashMap;
 import java.util.List;

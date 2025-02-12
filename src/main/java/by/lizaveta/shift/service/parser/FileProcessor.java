@@ -1,8 +1,9 @@
-package by.lizaveta.shift.service;
+package by.lizaveta.shift.service.parser;
 
 import by.lizaveta.shift.model.Department;
 import by.lizaveta.shift.model.Employee;
 import by.lizaveta.shift.model.Manager;
+import by.lizaveta.shift.service.validation.DataValidator;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -44,7 +45,7 @@ public class FileProcessor {
         String salaryStr = parts[3].trim();
         String lastField = parts[4].trim();
 
-        if (!DataValidator.isValidId(idStr)) {
+        if (DataValidator.isNotValidId(idStr)) {
             invalidData.add(line);
             return;
         }
@@ -98,7 +99,7 @@ public class FileProcessor {
     }
 
     private static void processEmployee(int id, String name, double salary, String managerIdStr, String line) {
-        if (!DataValidator.isValidId(managerIdStr)) {
+        if (DataValidator.isNotValidId(managerIdStr)) {
             invalidData.add(line);
             return;
         }

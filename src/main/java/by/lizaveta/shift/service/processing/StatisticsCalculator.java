@@ -1,4 +1,4 @@
-package by.lizaveta.shift.service;
+package by.lizaveta.shift.service.processing;
 
 import by.lizaveta.shift.model.Department;
 import by.lizaveta.shift.model.Employee;
